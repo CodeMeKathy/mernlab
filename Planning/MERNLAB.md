@@ -50,9 +50,9 @@ $ git checkout -b <your-branch-here>
 
 ### Express app requirements
 
-* [x] Express app responds with JSON
-    * [x] Create an API with existing Project2
-    * [x] Create a new Repo to serve as a front facing react app.
+* [/] Express app responds with JSON
+    * [X] Create an API with existing Project2
+    * [X] Create a new Repo to serve as a front facing react app.
 * [ ] CORS policy allows React app to make requests
 
 ### Bonus

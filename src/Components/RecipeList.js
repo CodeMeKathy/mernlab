@@ -1,6 +1,10 @@
 import React, { Component } from 'react'
 
 class RecipeList extends Component {
+    state = {
+
+    }
+
     render() {
         return (
             <div className="page-container">
@@ -19,5 +23,6 @@ class RecipeList extends Component {
         )
     }
 }
+
 
 export default RecipeList
