@@ -10,18 +10,19 @@
     4. Convert to JSON data
     5. Convert all render statements to json or send.
     6. Run nodemon & confirm JSON data present
-    7. deploy newly created API to heroku
-        8. git remote add heroku2 https://git.heroku.com/<YOUR_APP_NAME>.git
-git push heroku2 <BRANCH_NAME>:master
-heroku config:set MLAB_URL=<YOUR_MLAB_URL> --remote heroku2
-heroku run node db/seed --remote heroku2
+    7. Install Cors
+    8. deploy newly created API to heroku
+        a. git remote add heroku2 https://git.heroku.com/<YOUR_APP_NAME>.git
+        b. git push heroku2 <BRANCH_NAME>:master
+        c. heroku config:set MLAB_URL=<YOUR_MLAB_URL> --remote heroku2
+        d. heroku run node db/seed --remote heroku2
     
     Frontend
-    1. Install Cors
-    8. Create new repo  via 'create-react-app mern lab'Yarn install
-    2. Display Hello World
-    3. yarn start
-    4. Deploy to Github pages
+    1. Create new repo  via CLI: 'create-react-app mern lab'
+    3. Yarn install
+    4. Display Hello World
+    5. yarn start
+    6. Deploy to Github pages
 
 ## Prompt
 
@@ -48,7 +49,7 @@ $ git checkout -b <your-branch-here>
 
 ### Express app requirements
 
-* [ ] Express app responds with JSON
+* [X] Express app responds with JSON
     * [X] Create an API with existing Project2
     * [X] Create a new Repo to serve as a front facing react app.
 * [ ] CORS policy allows React app to make requests
