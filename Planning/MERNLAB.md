@@ -1,6 +1,7 @@
 # MERN Lab
 
 ## Process
+
     Backend/API
     1. Delete Public
     2. Delete Views
@@ -16,7 +17,7 @@
         b. git push heroku2 <BRANCH_NAME>:master
         c. heroku config:set MLAB_URL=<YOUR_MLAB_URL> --remote heroku2
         d. heroku run node db/seed --remote heroku2
-    
+
     Frontend
     1. Create new repo  via CLI: 'create-react-app mern lab'
     3. Yarn install
@@ -41,17 +42,17 @@ $ git checkout -b <your-branch-here>
 ### React app requirements
 
 * [X] A React app is present
-* [ ] React app has at least two components.
+* [X] React app has at least two components.
 * [ ] React repo is organized and files are semantically named
 * [/] React app makes API calls to the back-end application in `componentDidMount()`
-* [ ] CSS styling is present
+* [X] CSS styling is present
 * [ ] React app has create and read functionality on at least one model
 
 ### Express app requirements
 
-* [X] Express app responds with JSON
-    * [X] Create an API with existing Project2
-    * [X] Create a new Repo to serve as a front facing react app.
+* [x] Express app responds with JSON
+    * [x] Create an API with existing Project2
+    * [x] Create a new Repo to serve as a front facing react app.
 * [ ] CORS policy allows React app to make requests
 
 ### Bonus
