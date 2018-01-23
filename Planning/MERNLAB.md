@@ -23,7 +23,8 @@
     3. Yarn install
     4. Display Hello World
     5. yarn start
-    6. Deploy to Github pages
+    
+    Bonus: 1. Deploy to Github pages
 
 ## Prompt
 
@@ -43,17 +44,17 @@ $ git checkout -b <your-branch-here>
 
 * [X] A React app is present
 * [X] React app has at least two components.
-* [ ] React repo is organized and files are semantically named
-* [/] React app makes API calls to the back-end application in `componentDidMount()`
+* [X] React repo is organized and files are semantically named
+* [X] React app makes API calls to the back-end application in `componentDidMount()`
 * [X] CSS styling is present
-* [ ] React app has create and read functionality on at least one model
+* [/] React app has create and read functionality on at least one model
 
 ### Express app requirements
 
-* [/] Express app responds with JSON
+* [X] Express app responds with JSON
     * [X] Create an API with existing Project2
     * [X] Create a new Repo to serve as a front facing react app.
-* [ ] CORS policy allows React app to make requests
+* [X] CORS policy allows React app to make requests
 
 ### Bonus
 
@@ -82,6 +83,6 @@ Here is a basic guide to get you going...
 
 Please submit an issue to this repo by the time indicated on the course schedule with the following:
 
-* Due at 230 on 1/23
+* Due at 5 on 1/23
 * A link to your lab repo/repos
 * If you have one, a link to your deployed application

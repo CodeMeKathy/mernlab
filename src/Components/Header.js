@@ -8,11 +8,11 @@ class Header extends Component {
                 <a href="/" className="brand-logo center">Juliaette Family Cookbook Manager</a>
                 <ul className="right hide-on-med-and-down">
                 <li>
-                    <a href="/recipes ">Recipes</a>
+                    <a href="/Recipes ">Recipes</a>
                 </li>
-            </ul>
-        </div>
-    </nav>
+                </ul>
+                </div>
+            </nav>
 
         )
     }
