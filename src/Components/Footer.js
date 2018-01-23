@@ -5,10 +5,10 @@ class Footer extends Component {
         return (
             <div classname="footer-copyright page-footer black center">
                 <div classname="container">
-                    <div class="left">© 2017 Copyright</div>
+                    <div classname="left">© 2018 Copyright</div>
                     <div classname="right">
                         Designed with <span classname="red">&#10084;</span> by
-                        <span classname="">Lotus Designs</span>
+                        <span> Lotus Designs</span>
                     </div>
                 </div>
             </div>
