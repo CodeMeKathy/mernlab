@@ -6,6 +6,7 @@ import Home from './Components/Home'
 import Footer from './Components/Footer'
 import RecipeContainer from './Components/RecipeContainer'
 import RecipeList from './Components/RecipeList'
+// import RecipeDetails from './Components/RecipeDetails'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
                     <Route path="/recipes" render={(props) => (<RecipeContainer {...props} />)} />
                     <Route path="/" render={() => (<Home />) } />
                     <Route path="/recipelist" render={() => (<RecipeList />)} />
+                    {/* <Route path="/recipedetails" render={() => (<RecipeDetails />)} /> */}
                 </Switch>
             </main>
             <Footer />
