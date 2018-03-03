@@ -37,6 +37,7 @@ To access the deployed application, please visit [the github repository]( https:
 For a sneak peek check out... [Screencast](https://youtu.be/m0Izeq9MXFE). 
 
 ## Future iterations will include
+* [ ] Add pictures to each recipe and allow users to add pictures when adding a new recipe. 
 * [ ] User Profiles - Users will have the opportunity to create profiles and save their personalizes cookbooks and recipes. 
 * [ ] The ability to create multiple cookbooks and save specific recipes to the multiple cookbooks.
 * [ ] Users will be able to share recipes and even whole cookbooks with one another.

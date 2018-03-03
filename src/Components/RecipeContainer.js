@@ -1,6 +1,7 @@
 // Include all logic
 import React, { Component } from 'react'
 import axios from 'axios'
+import RecipeList from './RecipeList';
 
 // import { CLIENT_URL } from '../Constants.js'
 // import RecipeDetail from './RecipeDetail'
@@ -19,8 +20,9 @@ componentDidMount () {
 		console.log('recipes is ', recipes)
 		return (
 			<div> {
-			recipes.map((recipe, currentIndex) => {
-				return <li key={currentIndex}>{recipe.title}</li>})
+			// recipes.map((recipe, currentIndex) => {
+			// 	return <li key={currentIndex}>{recipe.title}</li>})
+				<RecipeList recipes={recipes}/>
 			} 
 			<h4 className="center">Add a family recipe to your cookbook!</h4>
 
@@ -32,11 +34,8 @@ componentDidMount () {
             <input className=" center btn waves-effect waves-light pink accent-2 "type="submit" value="Add Recipe"/>
             </form>
 			</div>
-		)
+			)
+		}
 	}
-}
-
+	
 export default RecipeContainer
-
-
-
