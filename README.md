@@ -44,3 +44,7 @@ For a sneak peek check out... [Screencast](https://youtu.be/m0Izeq9MXFE).
 #### Contributions 
 
 Additional features are welcome via a pull request.  For example, the ability for student to add their own content and create customized flash cards.  Please be considerate, we try adhere to KISS (Keep It Stupid Simple) and DRY (Don't Repeat Yourself) principles.  Also, remember to use and follow [Sandi Metz's methodology](https://robots.thoughtbot.com/sandi-metz-rules-for-developers). 
+
+## Authors
+
+Designed with HTML, CSS, JavaScript and <span style="color:red;">&#10084;</span> by Lotus Designs.
