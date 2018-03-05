@@ -1,9 +1,9 @@
 // Include all logic
 import React, { Component } from 'react'
 import axios from 'axios'
-import RecipeList from './RecipeList';
+import { CLIENT_URL } from '../constants'
 
-// import { CLIENT_URL } from '../Constants.js'
+import RecipeList from './RecipeList'
 // import RecipeDetail from './RecipeDetail'
 
 class RecipeContainer extends Component {
@@ -13,6 +13,8 @@ class RecipeContainer extends Component {
 componentDidMount () {
 	axios.get('https://recipemanagerapi.herokuapp.com/')
 	.then(response => this.setState({recipes: response.data.recipes}))
+	// axios.get(`${CLIENT_URL}/recipes`)
+	// .then(response => this.setState({ recipes: response.data }))
 
 }
 	render () {
@@ -23,7 +25,7 @@ componentDidMount () {
 			// recipes.map((recipe, currentIndex) => {
 			// 	return <li key={currentIndex}>{recipe.title}</li>})
 				<RecipeList recipes={recipes}/>
-			} 
+			}
 			<h4 className="center">Add a family recipe to your cookbook!</h4>
 
             <form className="center" action="/recipes" method="post">
@@ -37,5 +39,5 @@ componentDidMount () {
 			)
 		}
 	}
-	
+
 export default RecipeContainer

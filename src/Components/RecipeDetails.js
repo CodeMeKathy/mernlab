@@ -12,9 +12,12 @@ class RecipeDetails extends Component {
     toDashboard: false
   }
   handleDelete = () => {
-    axios.delete(`${CLIENT_URL}/recipe/${this.state.recipe.title}`)
+    axios.delete(`${CLIENT_URL}/${this.state.recipe.title}`)
       .then(this.setState({ toDashboard: true }))
       .catch(err => console.log(err))
+    // axios.get('https://recipemanagerapi.herokuapp.com/')
+    //   .then(response => this.setState({ recipes: response.data.recipes }))
+    //   .catch(err => console.log(err))
   }
   render() {
     let recipe = this.state.recipe
