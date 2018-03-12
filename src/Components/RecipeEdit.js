@@ -30,8 +30,9 @@ class RecipeEdit extends Component {
     if (e.target.value) this.setState({ recipe: Object.assign(this.state.recipe, { imageUrl: e.target.value }) })
   }
 
-  handleSubmit = () => {
-    axios.put(`${CLIENT_URL}/recipes/${this.state.recipe.title}`, { recipe: this.state.recipe })
+  handleSubmit = (e) => {
+    e.preventDefault()
+    axios.put(`${CLIENT_URL}/${this.state.recipe.title}`, { recipe: this.state.recipe })
       .then(this.setState({ toDashboard: true }))
       .catch(err => console.log('Oops!', err))
   }

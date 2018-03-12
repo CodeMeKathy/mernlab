@@ -15,7 +15,7 @@ const RecipeList = (props) => {
                 pathname: `/recipes/${recipe.title}`,
                 state: { recipe: recipe }
               }}>
-                <li className='list-li' key={index}>
+                <li key={index} className='list-li'>
                   {/* <div className='image-wrap'>
                     <img className='img-item-list image' src={recipe.imageUrl} alt="cover" />
                   </div> */}

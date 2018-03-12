@@ -8,6 +8,7 @@ import RecipeContainer from './RecipeContainer'
 import RecipeList from './RecipeList'
 import RecipeDetails from './RecipeDetails'
 import RecipeEdit from './RecipeEdit'
+import RecipeAdd from './RecipeAdd'
 
 class App extends Component {
   render() {
@@ -16,11 +17,11 @@ class App extends Component {
             <Header />
             <main>
                 <Switch>
-                    <Route exact path="/" render={() => (<Home />) } />
-                    // <Route path="/recipelist" render={() => (<RecipeList />)} />
-                    <Route path='/recipes/:title/edit' render={(props) => (<RecipeEdit {...props} />)} />
-                    <Route path='/recipes/:title' render={(props) => (<RecipeDetails {...props} />)} />
-                    <Route exact path="/recipes" render={(props) => (<RecipeContainer {...props} />)} />
+                    <Route exact path='/' render={() => (<Home />)} />
+                    <Route exact path='/recipes' render={(props) => (<RecipeContainer {...props} />)} />
+                    <Route exact path='/recipes/add' render={(props) => (<RecipeAdd {...props} />)} />
+                    <Route path='/recipes/:name/edit' render={(props) => (<RecipeEdit {...props} />)} />
+                    <Route path='/recipes/:name' render={(props) => (<RecipeDetails {...props} />)} />              
                 </Switch>
             </main>
             <Footer />
