@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 const RecipeList = (props) => {
-  const recipes = props.recipes
+  let recipes = props.recipes
   return (
     <div className='row'>
       <ul className='list-container'>
@@ -28,7 +28,12 @@ const RecipeList = (props) => {
           })
         }
         </ul>
-        </div>
+      <div>
+        <button className="btn white center">
+          <Link to='/recipes/add'>Add</Link>
+        </button>
+      </div>
+    </div>
         
   )
   

@@ -20,8 +20,8 @@ class App extends Component {
                     <Route exact path='/' render={() => (<Home />)} />
                     <Route exact path='/recipes' render={(props) => (<RecipeContainer {...props} />)} />
                     <Route exact path='/recipes/add' render={(props) => (<RecipeAdd {...props} />)} />
-                    <Route path='/recipes/:name/edit' render={(props) => (<RecipeEdit {...props} />)} />
-                    <Route path='/recipes/:name' render={(props) => (<RecipeDetails {...props} />)} />              
+                    <Route path='/recipes/:title/edit' render={(props) => (<RecipeEdit {...props} />)} />
+                    <Route path='/recipes/:title' render={(props) => (<RecipeDetails {...props} />)} />              
                 </Switch>
             </main>
             <Footer />
