@@ -11,19 +11,19 @@ const RecipeList = (props) => {
         {
           recipes.map((recipe, index) => {
             return (
-              <Link to={{
-                pathname: `/recipes/${recipe.title}`,
-                state: { recipe: recipe }
-              }}>
                 <li key={index} className='list-li'>
+                <Link to={{
+                  pathname: `/recipes/${recipe.title}`,
+                  state: { recipe: recipe }
+                  }}>
                   {/* <div className='image-wrap'>
                     <img className='img-item-list image' src={recipe.imageUrl} alt="cover" />
                   </div> */}
                   <div>
                     <h5 className='title-list'>{recipe.title}</h5>
                   </div>
-                </li>
               </Link>
+                </li>
             )
           })
         }

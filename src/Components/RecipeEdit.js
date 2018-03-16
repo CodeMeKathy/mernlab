@@ -34,6 +34,7 @@ class RecipeEdit extends Component {
     e.preventDefault()
     axios.put(`${CLIENT_URL}/${this.state.recipe.title}`, { recipe: this.state.recipe })
       .then(this.setState({ toDashboard: true }))
+      .then(res => console.log('res is ', res))
       .catch(err => console.log('Oops!', err))
   }
 
@@ -55,7 +56,7 @@ class RecipeEdit extends Component {
 
           <textarea id="input-text" className="materialize-textarea" type="text" value={recipe.description} onChange={this.handleDescription} />
 
-          <textarea id="input-text" className="materialize-textarea" type="text"value={recipe.quality} onChange={this.handleIngredients} />
+          <textarea id="input-text" className="materialize-textarea" type="text"value={recipe.ingredients} onChange={this.handleIngredients} />
 
           <textarea id="inst1" className="materialize-textarea" type="text" value={recipe.instructions} onChange={this.handleInstructions} />
 
@@ -64,20 +65,25 @@ class RecipeEdit extends Component {
           <textarea id="input-text" className="materialize-textarea" type="text" value={recipe.imageUrl} onChange={this.handleImage} />
 
           <input type="button" className="edit-btn" value="submit" onClick={this.handleSubmit} /> */}
+          <form className="col s12" onSubmit={this.handleSubmit}>
+          <div className="input-field col s6">
           <input id="title" name="title" type="text" defaultValue={recipe.title} onChange={this.handleTitle} />
           <label className={recipe.title && "active"} htmlFor="name">Title</label>
-        </div>
         <div className="input-field col s6">
           <input id="description" name="description" type="text" defaultValue={recipe.description} onChange={this.handleDescription} />
-          <label className={recipe.description && "active"} htmlFor="description">description</label>
+          <label className={recipe.description && "active"} htmlFor="description">Description</label>
+        </div>
+        <div className="input-field col s6">
+          <input id="ingredients" name="ingredients" type="text" defaultValue={recipe.ingredients} onChange={this.handleIngredients} />
+          <label className={recipe.ingredients && "active"} htmlFor="ingredients">Ingredients</label>
         </div>
         <div className="input-field col s6">
           <input id="instructions" name="instructions" type="text" defaultValue={recipe.instructions} onChange={this.handleInstructions} />
           <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions</label>
         </div>
         <div className="input-field col s6">
-          <input id="instructions" name="instructions" type="text" defaultValue={recipe.instructions} onChange={this.handleInstructions} />
-          <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions</label>
+          <input id="imageUrl" name="imageUrl" type="text" defaultValue={recipe.imageUrl} onChange={this.handleImage} />
+          <label className={recipe.imageUrl && "active"} htmlFor="imageUrl">Image Link</label>
         </div>
         <div className="input-field col s6">
           <input id="cookbook" name="cookbook" type="text" defaultValue={recipe.cookbook} onChange={this.handleCookbook} />
@@ -85,6 +91,9 @@ class RecipeEdit extends Component {
         </div>
         <div className="center">
           <input type="submit" className="btn" />
+        </div>
+        </div>
+        </form>
         </div>
       </div>
     )
