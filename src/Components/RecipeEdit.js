@@ -49,7 +49,7 @@ class RecipeEdit extends Component {
     }
     return (
       <div>
-        <h1>{recipe.title}</h1>
+        <h3>{recipe.title}</h3>
         <div>
           <h4>Edit Recipe</h4>
           {/* <textarea id="input-text col s4" className="materialize-textarea" type="text"value={recipe.title} onChange={this.handleTitle} />
@@ -65,28 +65,28 @@ class RecipeEdit extends Component {
           <textarea id="input-text" className="materialize-textarea" type="text" value={recipe.imageUrl} onChange={this.handleImage} />
 
           <input type="button" className="edit-btn" value="submit" onClick={this.handleSubmit} /> */}
-          <form className="col s12" onSubmit={this.handleSubmit}>
+          <form className="col s12 center" onSubmit={this.handleSubmit}>
           <div className="input-field col s6">
-          <input id="title" name="title" type="text" defaultValue={recipe.title} onChange={this.handleTitle} />
+          <textarea id="title" name="title" type="text" defaultValue={recipe.title} onChange={this.handleTitle} />
           <label className={recipe.title && "active"} htmlFor="name">Title</label>
         <div className="input-field col s6">
-          <input id="description" name="description" type="text" defaultValue={recipe.description} onChange={this.handleDescription} />
+          <textarea id="description" name="description" type="text" defaultValue={recipe.description} onChange={this.handleDescription} />
           <label className={recipe.description && "active"} htmlFor="description">Description</label>
         </div>
         <div className="input-field col s6">
-          <input id="ingredients" name="ingredients" type="text" defaultValue={recipe.ingredients} onChange={this.handleIngredients} />
+          <textarea id="ingredients" name="ingredients" type="text" defaultValue={recipe.ingredients} onChange={this.handleIngredients} />
           <label className={recipe.ingredients && "active"} htmlFor="ingredients">Ingredients</label>
         </div>
         <div className="input-field col s6">
-          <input id="instructions" name="instructions" type="text" defaultValue={recipe.instructions} onChange={this.handleInstructions} />
+          <textarea id="instructions" name="instructions" type="text" defaultValue={recipe.instructions} onChange={this.handleInstructions} />
           <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions</label>
         </div>
         <div className="input-field col s6">
-          <input id="imageUrl" name="imageUrl" type="text" defaultValue={recipe.imageUrl} onChange={this.handleImage} />
+          <textarea id="imageUrl" name="imageUrl" type="text" defaultValue={recipe.imageUrl} onChange={this.handleImage} />
           <label className={recipe.imageUrl && "active"} htmlFor="imageUrl">Image Link</label>
         </div>
         <div className="input-field col s6">
-          <input id="cookbook" name="cookbook" type="text" defaultValue={recipe.cookbook} onChange={this.handleCookbook} />
+          <textarea id="cookbook" name="cookbook" type="text" defaultValue={recipe.cookbook} onChange={this.handleCookbook} />
           <label className={recipe.cookbook && "active"} htmlFor="cookbook">Cookbook</label>
         </div>
         <div className="center">
