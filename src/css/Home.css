@@ -1,2 +1,6 @@
-body {
-  background-image: url ("cover2.jpg")}
+.Home {
+  min-height: 90vh;
+  min-width: 100vh;
+  background: url("https://github.com/Kathy145/mernlab/blob/master/public/cover.jpeg?raw=true") no-repeat;
+  background-size: contain; 
+}
