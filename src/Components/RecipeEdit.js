@@ -51,7 +51,7 @@ class RecipeEdit extends Component {
         <h1>{recipe.title}</h1>
         <div>
           <h4>Edit Recipe</h4>
-          <textarea id="input-text col s4" className="materialize-textarea" type="text"value={recipe.title} onChange={this.handleTitle} />
+          {/* <textarea id="input-text col s4" className="materialize-textarea" type="text"value={recipe.title} onChange={this.handleTitle} />
 
           <textarea id="input-text" className="materialize-textarea" type="text" value={recipe.description} onChange={this.handleDescription} />
 
@@ -63,7 +63,28 @@ class RecipeEdit extends Component {
 
           <textarea id="input-text" className="materialize-textarea" type="text" value={recipe.imageUrl} onChange={this.handleImage} />
 
-          <input type="button" className="edit-btn" value="submit" onClick={this.handleSubmit} />
+          <input type="button" className="edit-btn" value="submit" onClick={this.handleSubmit} /> */}
+          <input id="title" name="title" type="text" defaultValue={recipe.title} onChange={this.handleTitle} />
+          <label className={recipe.title && "active"} htmlFor="name">Title</label>
+        </div>
+        <div className="input-field col s6">
+          <input id="description" name="description" type="text" defaultValue={recipe.description} onChange={this.handleDescription} />
+          <label className={recipe.description && "active"} htmlFor="description">description</label>
+        </div>
+        <div className="input-field col s6">
+          <input id="instructions" name="instructions" type="text" defaultValue={recipe.instructions} onChange={this.handleInstructions} />
+          <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions</label>
+        </div>
+        <div className="input-field col s6">
+          <input id="instructions" name="instructions" type="text" defaultValue={recipe.instructions} onChange={this.handleInstructions} />
+          <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions</label>
+        </div>
+        <div className="input-field col s6">
+          <input id="cookbook" name="cookbook" type="text" defaultValue={recipe.cookbook} onChange={this.handleCookbook} />
+          <label className={recipe.cookbook && "active"} htmlFor="cookbook">Cookbook</label>
+        </div>
+        <div className="center">
+          <input type="submit" className="btn" />
         </div>
       </div>
     )
