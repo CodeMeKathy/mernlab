@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <nav>
-                <div className="nav-wrapper">
+                <div className="nav-wrapper deep-orange darken-4">
                     <Link to="/" className="brand-logo center">Family Cookbook Manager</Link>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><Link to="/recipes">Recipes</Link></li>
