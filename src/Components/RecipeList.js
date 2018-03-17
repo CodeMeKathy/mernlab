@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import '../css/RecipeList.css'
+import '../css/RecipeList.css'
 
 
 const RecipeList = (props) => {

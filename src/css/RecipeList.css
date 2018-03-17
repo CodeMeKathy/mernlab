@@ -1,0 +1,12 @@
+.list-container {
+  min-height: 75vh;
+}
+
+.list-li a :hover {
+  color: #CE0100;
+}
+
+.title-list {
+
+  color: black
+}
