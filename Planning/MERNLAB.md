@@ -86,3 +86,8 @@ Please submit an issue to this repo by the time indicated on the course schedule
 * Due at 5 on 1/23
 * A link to your lab repo/repos
 * If you have one, a link to your deployed application
+
+
+## Next Iteration
+<!-- Make the instructions an array in the MongoDB
+Map the instructions to a list on the React side -->

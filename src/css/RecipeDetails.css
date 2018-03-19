@@ -1,8 +1,3 @@
-/* .inst {
-  height: 500px !important;
-  
-} */
-
 .recipe-details {
   min-height: 100vh;
   width: 1200px;
@@ -17,8 +12,4 @@
 .img-recipedetails {
   height: 300px;
   width: 400px;
-}
-
-textarea {
-  padding-bottom: 0 !important;
 }

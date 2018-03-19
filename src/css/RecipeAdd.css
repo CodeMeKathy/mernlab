@@ -1,0 +1,15 @@
+/* Add below to App.css */
+.btn {
+
+  background-color: #CE0100!important;
+  margin-bottom: 20px;
+}
+
+.btn:focus {
+  background-color: #000000 !important;
+  /* margin-bottom: 20px; */
+}
+.btn:hover {
+  background-color: #000000 !important;
+  /* margin-bottom: 20px; */
+}

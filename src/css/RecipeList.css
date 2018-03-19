@@ -1,3 +1,10 @@
+/* .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+
+
 .list-container {
   min-height: 75vh;
 }

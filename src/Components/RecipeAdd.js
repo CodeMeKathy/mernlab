@@ -5,7 +5,8 @@ import { Redirect } from 'react-router-dom'
 import { CLIENT_URL } from '../constants'
 
 import RecipeList from './RecipeList'
-// import RecipeDetail from './RecipeDetail'
+import '../css/RecipeAdd.css'
+
 
 class RecipeAdd extends Component {
   state = {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { CLIENT_URL } from '../constants'
 import { Redirect } from 'react-router-dom'
 import axios from 'axios'
-// import '../css/RecipeDetails.css'
+import '../css/RecipeDetails.css'
 
 
 class RecipeDetails extends Component {
@@ -25,14 +25,18 @@ class RecipeDetails extends Component {
     return (
       <div>
         <div>
-          <h1>{recipe.title}</h1>
-          <div>
-            {/* <img className='img-recipedetails' src={recipe.imageUrl} alt="recipe-image" /> */}
-            <p>Description: {recipe.description}</p>
-            <p>Ingredients: {recipe.ingredients}</p>
-            <p>Instructions: {recipe.instructions}</p>
-            <p>Cookbook: {recipe.cookbook}</p>
-            <button>
+          <h3 className="center">{recipe.title}</h3>
+          <div className="recipe-details">
+            <img className='img-recipedetails' src={recipe.imageUrl} alt="recipe-image" />
+            <h5>Description</h5>
+            <p>{recipe.description}</p>
+            <h5>Ingredients</h5>
+            <p>{recipe.ingredients}</p>
+            <h5>Instructions</h5>
+            <p>{recipe.instructions}</p>
+            <h5>Cookbook</h5>
+            <p>{recipe.cookbook}</p>
+            <button className="btn">
               <Link to={{
                 pathname: `/recipes/${recipe.title}/edit`,
                 state: { recipe: recipe }
@@ -40,7 +44,7 @@ class RecipeDetails extends Component {
                 Edit
               </Link>
             </button>
-            <button onClick={this.handleDelete}>
+            <button className="btn" onClick={this.handleDelete}>
               <Link to={{
                 pathname: `/recipes/${recipe.title}`,
                 state: { recipe: recipe }

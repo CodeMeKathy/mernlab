@@ -48,10 +48,10 @@ class RecipeEdit extends Component {
       }} />
     }
     return (
-      <div>
-        <h3>{recipe.title}</h3>
-        <div>
-          <h4>Edit Recipe</h4>
+      <div className="center">
+        <h3>Edit Your Recipe</h3>
+        <h5>{recipe.title}</h5>
+        <div className="recipe-details center">
           {/* <textarea id="input-text col s4" className="materialize-textarea" type="text"value={recipe.title} onChange={this.handleTitle} />
 
           <textarea id="input-text" className="materialize-textarea" type="text" value={recipe.description} onChange={this.handleDescription} />
@@ -67,26 +67,26 @@ class RecipeEdit extends Component {
           <input type="button" className="edit-btn" value="submit" onClick={this.handleSubmit} /> */}
           <form className="col s12 center" onSubmit={this.handleSubmit}>
           <div className="input-field col s6">
-          <textarea id="title" name="title" type="text" defaultValue={recipe.title} onChange={this.handleTitle} />
+          <textarea id="title" name="title" type="text" className="materialize-textarea" defaultValue={recipe.title} onChange={this.handleTitle}></textarea>
           <label className={recipe.title && "active"} htmlFor="name">Title</label>
         <div className="input-field col s6">
-          <textarea id="description" name="description" type="text" defaultValue={recipe.description} onChange={this.handleDescription} />
+          <textarea id="description" name="description" type="text" className="materialize-textarea" defaultValue={recipe.description} onChange={this.handleDescription}></textarea>
           <label className={recipe.description && "active"} htmlFor="description">Description</label>
         </div>
         <div className="input-field col s6">
-          <textarea id="ingredients" name="ingredients" type="text" defaultValue={recipe.ingredients} onChange={this.handleIngredients} />
+          <textarea id="ingredients" name="ingredients" type="text" className="materialize-textarea" defaultValue={recipe.ingredients} onChange={this.handleIngredients}></textarea>
           <label className={recipe.ingredients && "active"} htmlFor="ingredients">Ingredients</label>
         </div>
         <div className="input-field col s6">
-          <textarea id="instructions" name="instructions" type="text" defaultValue={recipe.instructions} onChange={this.handleInstructions} />
+          <textarea id="instructions" name="instructions" type="text" className="materialize-textarea" defaultValue={recipe.instructions} onChange={this.handleInstructions}></textarea>
           <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions</label>
         </div>
         <div className="input-field col s6">
-          <textarea id="imageUrl" name="imageUrl" type="text" defaultValue={recipe.imageUrl} onChange={this.handleImage} />
+          <textarea id="imageUrl" name="imageUrl" type="text" className="materialize-textarea" defaultValue={recipe.imageUrl} onChange={this.handleImage}></textarea>
           <label className={recipe.imageUrl && "active"} htmlFor="imageUrl">Image Link</label>
         </div>
         <div className="input-field col s6">
-          <textarea id="cookbook" name="cookbook" type="text" defaultValue={recipe.cookbook} onChange={this.handleCookbook} />
+          <textarea id="cookbook" name="cookbook" type="text" className="materialize-textarea" defaultValue={recipe.cookbook} onChange={this.handleCookbook}></textarea>
           <label className={recipe.cookbook && "active"} htmlFor="cookbook">Cookbook</label>
         </div>
         <div className="center">
