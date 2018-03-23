@@ -22,6 +22,8 @@ class RecipeDetails extends Component {
   render() {
     let recipe = this.state.recipe
     if (this.state.toDashboard === true) return <Redirect to='/recipes' />
+    let ingredients = recipe.ingredients.split("|") 
+    let instructions = recipe.instructions.split("|")
     return (
       <div>
         <div>
@@ -31,9 +33,25 @@ class RecipeDetails extends Component {
             <h5>Description</h5>
             <p>{recipe.description}</p>
             <h5>Ingredients</h5>
-            <p>{recipe.ingredients}</p>
+            <p><ul>{
+              ingredients.map((ingredient, index) => {
+                return (
+                  <li key={index} className='ing-list'>
+                    {ingredient}
+                  </li>
+                )
+              })
+            }</ul></p>
             <h5>Instructions</h5>
-            <p>{recipe.instructions}</p>
+            <p><ul>{
+              instructions.map((instruction, index) => {
+                return (
+                  <li key={index} className='ing-list'>
+                    {instruction}
+                  </li>
+                )
+              })
+            }</ul></p>
             <h5>Cookbook</h5>
             <p>{recipe.cookbook}</p>
             <button className="btn">
