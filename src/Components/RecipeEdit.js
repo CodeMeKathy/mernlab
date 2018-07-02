@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { CLIENT_URL } from '../constants'
+import { Redirect, Link } from 'react-router-dom'
 import '../css/RecipeEdit.css'
-
-import { Redirect } from 'react-router-dom'
 
 class RecipeEdit extends Component {
   state = {
@@ -52,19 +51,6 @@ class RecipeEdit extends Component {
         <h3>Edit Your Recipe</h3>
         <h5>{recipe.title}</h5>
         <div className="recipe-details center">
-          {/* <textarea id="input-text col s4" className="materialize-textarea" type="text"value={recipe.title} onChange={this.handleTitle} />
-
-          <textarea id="input-text" className="materialize-textarea" type="text" value={recipe.description} onChange={this.handleDescription} />
-
-          <textarea id="input-text" className="materialize-textarea" type="text"value={recipe.ingredients} onChange={this.handleIngredients} />
-
-          <textarea id="inst1" className="materialize-textarea" type="text" value={recipe.instructions} onChange={this.handleInstructions} />
-
-          <textarea id="input-text" className="materialize-textarea" type="text" value={recipe.cookbook} onChange={this.handleCookbook} />
-
-          <textarea id="input-text" className="materialize-textarea" type="text" value={recipe.imageUrl} onChange={this.handleImage} />
-
-          <input type="button" className="edit-btn" value="submit" onClick={this.handleSubmit} /> */}
           <form className="col s12 center" onSubmit={this.handleSubmit}>
           <div className="input-field col s6">
           <textarea id="title" name="title" type="text" className="materialize-textarea" defaultValue={recipe.title} onChange={this.handleTitle}></textarea>
@@ -90,6 +76,9 @@ class RecipeEdit extends Component {
           <label className={recipe.cookbook && "active"} htmlFor="cookbook">Cookbook</label>
         </div>
         <div className="center">
+          <button className="btn">
+            <Link to={`/recipes/${recipe.title}`}>Back</Link>
+          </button>
           <input type="submit" className="btn" />
         </div>
         </div>
@@ -101,4 +90,3 @@ class RecipeEdit extends Component {
 }
 
 export default RecipeEdit
-

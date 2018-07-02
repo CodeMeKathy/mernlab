@@ -15,13 +15,10 @@ class RecipeDetails extends Component {
     axios.delete(`${CLIENT_URL}/${this.state.recipe.title}`)
       .then(this.setState({ toDashboard: true }))
       .catch(err => console.log(err))
-    // axios.get('https://recipemanagerapi.herokuapp.com/')
-    //   .then(response => this.setState({ recipes: response.data.recipes }))
-    //   .catch(err => console.log(err))
   }
   render() {
     let recipe = this.state.recipe
-    if (this.state.toDashboard === true) return <Redirect to='/recipes' />
+    if (this.state.toDashboard) return <Redirect to='/recipes' />
     let ingredients = recipe.ingredients.split("|") 
     let instructions = recipe.instructions.split("|")
     return (
