@@ -1,24 +1,15 @@
-// Include all logic
 import React, { Component } from 'react'
 import axios from 'axios'
-import { Redirect } from 'react-router-dom'
+import { Redirect, Link } from 'react-router-dom'
 import { CLIENT_URL } from '../constants'
-
 import RecipeList from './RecipeList'
 import '../css/RecipeAdd.css'
-
 
 class RecipeAdd extends Component {
   state = {
     recipe: {},
     toDashboard: false
   }
-  // componentDidMount () {
-  // 	axios.get('https://recipemanagerapi.herokuapp.com/')
-  // 	.then(response => this.setState({recipes: response.data.recipes}))
-  // 	// axios.get(`${CLIENT_URL}/recipes`)
-  // 	// .then(response => this.setState({ recipes: response.data }))
-
   handleTitle = (e) => {
     if (e.target.value) this.setState({ recipe: Object.assign(this.state.recipe, { title: e.target.value }) })
   }
@@ -77,16 +68,19 @@ class RecipeAdd extends Component {
                 <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions (Use pipe '|' key to separate items)</label>
               </div>
               <div className="input-field col s6">
-                <input id="imageUrl" name="imageUrl" type="text" defaultValue={recipe.imageUrl} onChange={this.handleImageUrl} />
+                <textarea id="imageUrl" name="imageUrl" type="text" className="materialize-textarea" defaultValue={recipe.imageUrl} onChange={this.handleImage}></textarea>
                 <label className={recipe.imageUrl && "active"} htmlFor="imageUrl">Image Link</label>
               </div>
               <div className="input-field col s6">
                 <input id="cookbook" name="cookbook" type="text" defaultValue={recipe.cookbook} onChange={this.handleCookbook} />
                 <label className={recipe.cookbook && "active"} htmlFor="cookbook">Cookbook</label>
               </div>
-              <div className="center">
-                <input type="submit" className="btn" />
-              </div>
+            </div>
+            <div className="center">
+              <button className="btn">
+                <Link to="/recipes">Back</Link>
+              </button>
+              <input type="submit" className="btn" />
             </div>
           </form>
         </div>
@@ -96,37 +90,3 @@ class RecipeAdd extends Component {
 }
 
 export default RecipeAdd
-
-//     return (
-//       <div className="container">
-//         <h4 className="center">Add a family recipe to your cookbook!</h4>
-//         {/* <div className="center container"> */}
-//         <div className="center row">
-//           <div className="center input-field col s10">
-//             <form className="center" action="/recipes" method="post">
-
-//               <input className="center" type="text" name="recipe[title]" placeholder="Title" onChange={this.handleTitle} />
-
-//               <input className="center" type="text" name="recipe[description]" placeholder="Description" onChange={this.handleDescription} />
-
-//               <input className="center" type="text" name="recipe[ingredients]" placeholder="Ingredients" onChange={this.handleIngredients} />
-
-//               <input className="center" type="text" name="recipe[instructions]" placeholder="Instructions" onChange={this.handleInstructions} />
-
-//               <input className="center" type="text" name="recipe[cookbook]" placeholder="Cookbook" onChange={this.handleCookbook} />
-
-//               <input className="center" type="text" name="recipe[cookbook]" placeholder="Cookbook" onChange={this.handleImage} />
-
-//               <input className=" center btn waves-effect waves-light pink accent-2 " type="submit" value="Add Recipe" />
-//             </form>
-//             {/* </div> */} 
-//           </div>
-//         </div>
-//       </div>
-//     )
-//   }
-// }
-
-// export default RecipeAdd
-
-  
