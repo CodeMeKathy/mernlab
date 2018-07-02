@@ -26,7 +26,7 @@ To access the deployed application, please visit [the github repository]( https:
 * [JavaScript](https://www.javascript.com/) - Provides the functionality of moving through the vocabulary. 
 * [HTML](https://html.com/) - The web application structural framework
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Used to style and design the application.
-* [ReactJs](https://https://reactjs.org/) - A front-end JavaScript based framework used to style and design the application.
+* [ReactJs](https://reactjs.org/) - A front-end JavaScript based framework used to style and design the application.
 
 
 #### Instructions
