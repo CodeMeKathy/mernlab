@@ -77,7 +77,10 @@ class RecipeEdit extends Component {
         </div>
         <div className="center">
           <button className="btn">
-            <Link to={`/recipes/${recipe.title}`}>Back</Link>
+            <Link to={{
+              pathname: `/recipes/${recipe.title}`,
+              state: { recipe: recipe }
+            }}>Back</Link>
           </button>
           <input type="submit" className="btn" />
         </div>
