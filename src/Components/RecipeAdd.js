@@ -66,15 +66,19 @@ class RecipeAdd extends Component {
               </div>
               <div className="input-field col s6">
                 <input id="description" name="description" type="text" defaultValue={recipe.description} onChange={this.handleDescription} />
-                <label className={recipe.description && "active"} htmlFor="description">description</label>
+                <label className={recipe.description && "active"} htmlFor="description">Description</label>
+              </div>
+              <div className="input-field col s6">
+                <input id="instructions" name="instructions" type="text" defaultValue={recipe.ingredients} onChange={this.handleIngredients} />
+                <label className={recipe.ingredients && "active"} htmlFor="instructions">Ingredients (Use pipe '|' key to separate items)</label>
               </div>
               <div className="input-field col s6">
                 <input id="instructions" name="instructions" type="text" defaultValue={recipe.instructions} onChange={this.handleInstructions} />
-                <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions</label>
+                <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions (Use pipe '|' key to separate items)</label>
               </div>
               <div className="input-field col s6">
-                <input id="instructions" name="instructions" type="text" defaultValue={recipe.instructions} onChange={this.handleInstructions} />
-                <label className={recipe.instructions && "active"} htmlFor="instructions">Instructions</label>
+                <input id="imageUrl" name="imageUrl" type="text" defaultValue={recipe.imageUrl} onChange={this.handleImageUrl} />
+                <label className={recipe.imageUrl && "active"} htmlFor="imageUrl">Image Link</label>
               </div>
               <div className="input-field col s6">
                 <input id="cookbook" name="cookbook" type="text" defaultValue={recipe.cookbook} onChange={this.handleCookbook} />
