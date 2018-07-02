@@ -36,7 +36,7 @@
 }
 
 .btn {
-
+  margin: 0 5px !important;
   background-color: #CE0100!important;
   margin-bottom: 20px;
 }
@@ -48,4 +48,10 @@
 
 .btn:hover {
   background-color: #000000 !important;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 1rem;
+  }
 }
