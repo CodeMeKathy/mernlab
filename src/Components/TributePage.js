@@ -11,8 +11,8 @@ class TributePage extends Component {
         {/* <h1>Hello World</h1> */}
         <h1 id='title'> Juliaette Carroll </h1>
         <div id='img-div' className='center' >
-          <img src="https://github.com/Kathy145/mernlab/blob/tributePage/public/welcome.png?raw=true" alt="A picture of Juilaette Carroll" id='image' />
-          <h6 id='img-caption'>Juliaette Carroll with her husband, Walter Carroll, of 60 years. </h6>
+          <img src="https://github.com/Kathy145/mernlab/blob/tributePage/public/welcome.png?raw=true" alt="Juilaette Carroll pictured with husband." id='image' />
+          <h6 id='img-caption'>Juliaette Carroll with Walter Carroll her husband of 60 years. </h6>
         </div>
           <p id='tribute-info'>
           As a little girl from my Grandmommy's kitchen table, I would watch her create dishes with such deep flavors that excited the pallet of this once young girl.  As a curious young child, I was inquisitive and craved to know the recipe continents and how to make it taste just like my when Grandmommy made it. So I began asking my grandmother questions and recording her recipes as you see she did everything by memory or maybe instinct.
