@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .App-logo {
@@ -50,8 +51,8 @@
   background-color: #000000 !important;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   h1 {
-    font-size: 1rem;
+    font-size: .5rem;
   }
 }

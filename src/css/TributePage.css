@@ -1,0 +1,21 @@
+/* @import url('https://fonts.googleapis.com/css?family=Lobster'); */
+
+body {
+  background-color: #E7D5D5;
+}
+
+h1, h6 {
+  font-family: 'Lobster', cursive;
+}
+
+
+#tribute-info {
+  /* display: flex; */
+  text-align: justify;
+  height: 450px;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  /* justify-items: center !important; */
+  font-family: 'Raleway', sans-serif;
+}
