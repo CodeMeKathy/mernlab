@@ -27,3 +27,15 @@ h1, h6 {
   border-radius: 45%;
   border: 90px;
 }
+
+@media (max-width: 500px) {
+  #image { 
+    width: 100px;
+    height: 200px;
+  }
+  #tribute-info {
+    font-size: 14px;
+    height: 100vh;
+    width: 250px;
+  }
+}
