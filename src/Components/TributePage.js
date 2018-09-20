@@ -19,7 +19,7 @@ class TributePage extends Component {
 
           <br/>
           <br/>
-          Many ions later, as a developer, it accord to me that I could recreate my beloved Grandmommy's recipes which I had typed up and printed in a binder.  I could create a place where her recipes could be stored and accessed remotely by all my cousins.  Better yet they could add their recipes learned from our Grandmother.  We could all access and honor her memory while being able to share her recipes with generations to come.
+          Many, many years later, as a developer, I envisioned a way I could recreate my beloved Grandmommy's recipes which I had typed up and printed in a binder.  I could create a place where her recipes could be stored and accessed remotely by all my cousins.  Better yet they could add their recipes learned from our Grandmother.  We could all access and honor her memory while being able to share her recipes with generations to come.
           </p>
 
       </div>
