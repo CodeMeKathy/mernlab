@@ -19,3 +19,11 @@ h1, h6 {
   /* justify-items: center !important; */
   font-family: 'Raleway', sans-serif;
 }
+
+
+#image {
+  height: 475px;
+  width: 300px;
+  border-radius: 45%;
+  border: 90px;
+}
