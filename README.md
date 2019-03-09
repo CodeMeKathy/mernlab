@@ -49,4 +49,4 @@ Additional features are welcome via a pull request.  For example, the ability fo
 
 ## Authors
 
-Designed with HTML, CSS, JavaScript and <span style="color:red;">&#10084;</span> by Lotus Designs.
+Designed with HTML, CSS, JavaScript and <span style="color:red;">&#10084;</span> by CodeMeKathy.
