@@ -8,25 +8,31 @@ h1, h6 {
   font-family: 'Lobster', cursive;
 }
 
+#img-div {
+  float: left;
+  margin-top: -80px;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+
+#image {
+  height: 475px;
+  width: 300px;
+  border-radius: 49%;
+  border: 90px;
+}
 
 #tribute-info {
   /* display: flex; */
   text-align: justify;
   height: 450px;
-  width: 700px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
   /* justify-items: center !important; */
   font-family: 'Raleway', sans-serif;
 }
 
-
-#image {
-  height: 475px;
-  width: 300px;
-  border-radius: 45%;
-  border: 90px;
-}
 
 @media (max-width: 500px) {
   #image { 

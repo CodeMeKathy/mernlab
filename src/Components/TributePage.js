@@ -5,13 +5,13 @@ import '../css/TributePage.css'
 class TributePage extends Component {
  render() {
    return (
-    <div className='page-container TributePage' id='Main'>
+    <div className='page-container TributePage' id='main'>
       <div className='row'>
 
         {/* <h1>Hello World</h1> */}
         <h1 id='title'> Juliaette Carroll </h1>
         <div id='img-div' className='center' >
-          <img src="https://github.com/Kathy145/mernlab/blob/tributePage/public/IMG_2187.jpeg?raw=true" alt="Juilaette Carroll pictured with husband." id='image' />
+          <img src="https://github.com/Kathy145/mernlab/blob/tributePage/public/IMG_2187.jpeg?raw=true" alt="Juilaette Carroll pictured." id='image' />
           <h6 id='img-caption'>Juliaette Carroll</h6>
         </div>
           <p id='tribute-info'>
