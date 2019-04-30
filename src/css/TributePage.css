@@ -8,11 +8,16 @@ h1, h6 {
   font-family: 'Lobster', cursive;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 #img-div {
   float: left;
   margin-top: -80px;
   margin-left: 50px;
-  margin-right: 60px;
+  margin-right: 100px;
+
 }
 
 #image {
