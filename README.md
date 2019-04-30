@@ -2,15 +2,15 @@
 
 ### ***A handy tool to organize and share your family and personal cookbooks..***
 
-The Juliaette Family Cookbook Manager is a back-end developed application developed with JavaScript, ReactJS, designed Materalize with <span style="color:red;">&#10084;</span> by Lotus Designs.  Inspired by the recipes I recorded by hand dicated by my grandmother and wanting a digital way to record our family cookbook.
+The Juliaette Family Cookbook Manager is a back-end developed application developed with JavaScript, ReactJS, designed Materialize with <span style="color:red;">&#10084;</span> by Kathy Lambert.  Inspired by the recipes I recorded by hand dictated by my grandmother and wanting a digital way to record our family cookbook.
 
-![Welcome Page](https://github.com/Kathy145/familyCookbookManager/blob/master/public/img/Home%20-%20Juilaette%20Family%20Cookbook%20Manager.png?raw=true "Welcome")
+![Welcome Page](https://github.com/CodeMeKathy/familyCookbookManager/blob/master/public/img/Home%20-%20Juilaette%20Family%20Cookbook%20Manager.png?raw=true "Welcome")
 
 ## Getting Started
 
-This web application was created with simplicity in mind.  Developed with JavaScript, HTML and CSS with a ReactJS framework. Clone and download this repository to your system to play with it yourself.  JavaScript is embeded in the application with a CDN link, enabling it to run without any additional downloads on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This web application was created with simplicity in mind.  Developed with JavaScript, HTML and CSS with a ReactJS framework. Clone and download this repository to your system to play with it yourself.  JavaScript is embedded in the application with a CDN link, enabling it to run without any additional downloads on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-Begin your Juliaette Family Cookbook Manager dev experience, by visiting the Github [repository]( https://github.com/Kathy145/mernlab) to clone and download to your machine.
+Begin your Juliaette Family Cookbook Manager dev experience, by visiting the Github [repository]( https://github.com/CodeMeKathy/mernlab) to clone and download to your machine.
 
 
 ### Installing
@@ -32,12 +32,12 @@ To access the deployed application, please visit the Heroku [deployed applicatio
 #### Instructions
 - Click on the recipes menu button to view and add your own recipes to the cookbook of your choice. 
 - To update an existing recipe, select the recipe and update the necessary items. 
-![Recipes View](https://github.com/Kathy145/familyCookbookManager/blob/master/public/img/Recipe%20View%20-%20Juliaette%20Family%20Cookbook%20Manager.png?raw=true "Recipes View")
+![Recipes View](https://github.com/CodeMeKathy/familyCookbookManager/blob/master/public/img/Recipe%20View%20-%20Juliaette%20Family%20Cookbook%20Manager.png?raw=true "Recipes View")
 
 For a sneak peek check out... [Screencast](https://youtu.be/m0Izeq9MXFE). 
 
 ## Future iterations will include:
-* [ ] Add a Tribute page dedicated to my grandmother, Juilaette Carroll.
+* [✅] Add a Tribute page dedicated to my grandmother, Juliaette Carroll.
 * [ ] Add pictures to each recipe and allow users to add pictures when adding a new recipe. 
 * [ ] User Profiles - Users will have the opportunity to create profiles and save their personalizes cookbooks and recipes. 
 * [ ] The ability to create multiple cookbooks and save specific recipes to the multiple cookbooks.

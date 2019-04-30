@@ -1,0 +1,11 @@
+/* @media (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+  }
+} */
+
+@media (max-width: 500px) {
+  nav .brand-logo {
+    font-size: 12px;
+  }
+}

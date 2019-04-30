@@ -1,0 +1,47 @@
+/* @import url('https://fonts.googleapis.com/css?family=Lobster'); */
+
+body {
+  background-color: #E7D5D5;
+}
+
+h1, h6 {
+  font-family: 'Lobster', cursive;
+}
+
+#img-div {
+  float: left;
+  margin-top: -80px;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+
+#image {
+  height: 475px;
+  width: 300px;
+  border-radius: 49%;
+  border: 90px;
+}
+
+#tribute-info {
+  /* display: flex; */
+  text-align: justify;
+  height: 450px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  /* justify-items: center !important; */
+  font-family: 'Raleway', sans-serif;
+}
+
+
+@media (max-width: 500px) {
+  #image { 
+    width: 100px;
+    height: 200px;
+  }
+  #tribute-info {
+    font-size: 14px;
+    height: 100vh;
+    width: 250px;
+  }
+}
