@@ -5,7 +5,7 @@ class Footer extends Component {
         return (
             <footer className="row black white-text">
                 <div className="col s2">
-                    <div className="footer-content">&copy; 2018 Copyright</div>
+                    <div className="footer-content">&copy; 2020 Copyright</div>
                 </div>
                 <div className="col s4 offset-s6">
                     <div className="footer-content">Homemade with &hearts; by Kathy Lambert</div>
