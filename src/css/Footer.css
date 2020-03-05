@@ -8,7 +8,7 @@
 }
 
 .footer-col2 {
-  margin-left: 38rem;
+  margin-left: 84rem;
 }
 
 /* Media Queries */
@@ -23,11 +23,11 @@
     /* display: flex; */
     margin-left: 0rem;
   }
-  
+
   .footer-col2 {
     margin-left: 0rem;
   }
-  
+
   /* .footer-col2 {
     width: 100%;
     margin-left: 0px;
