@@ -24,8 +24,15 @@
   margin-top: 100px;
 }
 
-/* @media (max-width: 576px) {
-  .home-cover-image {
+/* Media Queries */
 
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .heading {
+    font-size: 4rem;
+    margin-top: 6rem;
   }
-} */
+  .home-btn {
+    margin-top: 0rem;
+  }
+}

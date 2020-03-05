@@ -10,7 +10,7 @@ class Home extends Component {
           <h1 className='heading'>Welcome</h1>
           <div className='home-btn'>
             <button className='btn'>
-              <Link to='/recipes'>Recipes</Link>
+              <Link to='/recipes'>View Recipes</Link>
             </button>
           </div>
         </div>
