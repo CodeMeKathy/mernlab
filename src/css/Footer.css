@@ -1,4 +1,26 @@
-/* a.white-text text-lighten-4.right {
-  padding-right: 100px;
+/* Footer Styling */
+.footer-row {
+  display: flex;
+}
+.footer-col1 {
+  /* display: flex; */
+  margin-left: 5rem;
+}
 
-} */
+.footer-col2 {
+  margin-left: 38rem;
+}
+
+/* Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .footer-col2 {
+    width: 100%;
+    margin-left: 0px;
+  } */
+}
