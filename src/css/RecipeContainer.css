@@ -1,4 +1,11 @@
 div.center.input-field.col.s10 {
-
   margin-right: 80px;
+}
+/* Media Queries */
+
+/* Mobile Phones */
+@media (max-width: 414px) {
+  div.center.input-field.col.s10 {
+    margin-right: 0px;
+  }
 }
