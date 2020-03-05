@@ -6,7 +6,7 @@ class Footer extends Component {
       <footer className='footer-row black white-text'>
         <div className='col footer-col1'>
           <div className=' footer-content'>
-            &copy; 2020 Copyright
+            &copy; 2020 CodeMeKathy
           </div>
         </div>
         <div className='col footer-col2'>
