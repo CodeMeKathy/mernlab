@@ -14,14 +14,15 @@
   /* display: flex; */
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1 !important;
 }
 .heading {
   color: aliceblue;
+  font-size: 6rem;
+  margin-top: 22rem;
 }
 
 .home-btn {
-  margin-top: 100px;
+  margin-top: 2.5rem;
 }
 
 /* Media Queries */
