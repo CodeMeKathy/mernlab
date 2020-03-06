@@ -1,7 +1,8 @@
 div.center.input-field.col.s10 {
   margin-right: 80px;
 }
-/* Media Queries */
+
+/*! Media Queries */
 
 /* Mobile Phones */
 @media (max-width: 414px) {
@@ -9,3 +10,15 @@ div.center.input-field.col.s10 {
     margin-right: 0px;
   }
 }
+
+/* iPad Portrait
+@media (max-width: 768px) {
+} 
+
+/* iPad
+@media (min-width: 1024px) {
+}
+
+/* iPad Pro */
+/* @media (min-width: 1366px) {
+} */

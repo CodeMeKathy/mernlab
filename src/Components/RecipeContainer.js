@@ -13,7 +13,7 @@ componentDidMount () {
 }
 	render () {
 		let recipes = this.state.recipes
-		console.log('recipes is ', recipes)
+		// console.log('recipes is ', recipes)
 		return (
 			<div> {
 				<RecipeList recipes={recipes}/>
