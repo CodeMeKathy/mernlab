@@ -33,13 +33,18 @@
   } */
 }
 /* iPad */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .footer-col2 {
     margin-left: 20rem;
   }
+} */
+@media (min-width: 1024px) {
+  .footer-col2 {
+    margin-left: 33rem;
+  }
 }
 /* iPad Pro */
-@media (max-width: 1366px) {
+@media (min-width: 1366px) {
   .footer-col2 {
     margin-left: 53rem !important;
   }
